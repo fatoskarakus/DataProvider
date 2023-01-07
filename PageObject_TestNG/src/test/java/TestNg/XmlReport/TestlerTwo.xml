@@ -1,0 +1,29 @@
+<suite name="My TestTwo">
+    <tests name="My TestsTwo">
+
+        <test name="Include_Test">
+            <classes>
+                <class name="TestNg.Testler_4"/>
+                <class name="TestNg.AlfabetikMetodName_3"/>
+                <methods>
+                    <include name="Test_2"/>
+                    <include name="Test_4"/>
+                    <exclude name="d"/>
+                </methods>
+            </classes>
+        </test>
+
+<!--Grup name ile çalıştırma ve çalıştırmama -->
+        <test name="Group_Test">
+            <classes>
+            <class name="TestNg.Testler_4"/>
+        <groups>
+<run>
+    <exclude name="grup1"/>
+    <!--<include name="grup1"/>  -->
+</run>
+        </groups>
+            </classes>
+        </test>
+    </tests>
+</suite>

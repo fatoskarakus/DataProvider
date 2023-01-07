@@ -1,0 +1,46 @@
+<suite name="Parallel_Testing" parallel="methods" thread-count="5">
+    <tests name="My Tests">
+        <test name="Your Store Three">
+            <parameter name="username" value="Fatma"/>
+            <parameter name="lastname" value="Karakus"/>
+            <parameter name="email" value="test@gmail.com"/>
+            <parameter name="phone" value="5415415454"/>
+            <parameter name="pass" value="5415415454"/>
+            <parameter name="confirm" value="5415415454"/>
+            <parameter name="sUrl" value="http://tutorialsninja.com/demo/index.php?route=account/register"/>
+            <classes>
+                <class name="TestNg.ParametersXml"/>
+            </classes>
+        </test>
+
+
+        <test name="StoreTwo">
+            <parameter name="browser" value="edge"/>
+            <classes>
+                <class name="TestNg.ParalelStoreDriver"/>
+            </classes>
+        </test>
+
+
+        <test name="StoreOne">
+            <parameter name="browser" value="chrome"/>
+            <classes>
+                <class name="TestNg.ParalelStoreDriver"/>
+            </classes>
+        </test>
+
+        <test name="Test_Four">
+            <classes>
+                <class name="TestNg.Testler_4"/>
+                <class name="TestNg.AlfabetikMetodName_3"/>
+            </classes>
+        </test>
+
+        <test name="Test_Five">
+            <classes>
+                <class name="TestNg.TagsAndMethods_1"/>
+                <class name="TestNg.TestNG_2"/>
+            </classes>
+        </test>
+    </tests>
+</suite>

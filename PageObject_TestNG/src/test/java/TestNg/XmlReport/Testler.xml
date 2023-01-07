@@ -1,0 +1,19 @@
+<suite name="My Test">
+    <tests name="My Tests">
+        <listeners>
+            <listener class-name="Utility.Listeners"/>
+        </listeners>
+        <test name="Test_1">
+            <classes>Utility
+                <class name="TestNg.Testler_4"/>
+                <class name="TestNg.AlfabetikMetodName_3"/>
+            </classes>
+        </test>
+        <test name="Test_2">
+            <classes>
+                <class name="TestNg.TagsAndMethods_1"/>
+                <class name="TestNg.TestNG_2"/>
+            </classes>
+        </test>
+    </tests>
+</suite>
